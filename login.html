@@ -1,0 +1,15 @@
+<html>
+<head>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<h2>🔐 Secure Login System</h2>
+<form action="/login" method="POST">
+    <input type="text" name="username" placeholder="Enter Username" required>
+    <input type="password" name="password" placeholder="Enter Password" required>
+    <button type="submit">Login</button>
+</form>
+
+<a href="/signup">Go to Signup</a>
+</body>
+</html>
